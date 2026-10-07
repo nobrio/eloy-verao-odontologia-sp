@@ -2,19 +2,21 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <!-- Demonstração: tirar o noindex quando o site for publicado no domínio da clínica -->
   <meta name="robots" content="noindex, nofollow">
   <title>Eloy Verão Odontologia | Dentista no Jardim Aricanduva, São Paulo (Unidade SP)</title>
-  <meta name="description" content="Dentista da família no Jardim Aricanduva, Zona Leste de São Paulo, desde 2002. Clínica geral, aparelho e alinhador, implante e prótese, clareamento e harmonização orofacial. 12 convênios e particular.">
-  <meta name="theme-color" content="#262c6c">
+  <meta name="description" content="Dentista no Jardim Aricanduva, Zona Leste de São Paulo, desde 2002. Da consulta das crianças ao implante, pelo seu convênio (12 planos) ou particular. Marque pelo WhatsApp da Unidade São Paulo.">
+  <meta name="theme-color" content="#FBF9F6">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Eloy Verão Odontologia · Unidade São Paulo">
   <meta property="og:title" content="Eloy Verão Odontologia · Jardim Aricanduva, São Paulo">
-  <meta property="og:description" content="Dentista da família no Jardim Aricanduva desde 2002. 12 convênios e particular. Agende pelo WhatsApp da Unidade São Paulo.">
-  <meta property="og:image" content="assets/img/og-eloy-verao.jpg">
+  <meta property="og:description" content="Aqui, dentista vira da família. Desde 2002 no Jardim Aricanduva, com 12 convênios e particular.">
+  <!-- Endereço da demonstração: trocar pelo domínio da clínica na versão oficial (og:url, og:image e o schema) -->
+  <meta property="og:url" content="https://eloy-verao-demo.vercel.app/">
+  <meta property="og:image" content="https://eloy-verao-demo.vercel.app/assets/img/og-eloy-verao.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -23,21 +25,22 @@
   <link rel="icon" href="assets/img/favicon-512.png" sizes="512x512" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <link rel="preload" href="assets/fonts/quicksand-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/mona-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/img/socios-1020.webp" as="image" type="image/webp" media="(min-width: 700px)">
-  <link rel="preload" href="assets/img/socios-640.webp" as="image" type="image/webp" media="(max-width: 699px)">
-  <link rel="stylesheet" href="assets/css/site.css?v=20261005a">
-  <script>document.documentElement.classList.add('js');setTimeout(function(){var h=document.documentElement;if(!h.dataset.pronto)h.classList.add('montado-tudo')},3000)</script>
+  <link rel="preload" href="assets/img/socios-1120.webp" as="image" type="image/webp" media="(min-width: 700px)" fetchpriority="high">
+  <link rel="preload" href="assets/img/socios-760.webp" as="image" type="image/webp" media="(max-width: 699px)" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/site.css?v=20261006v4">
+  <script>document.documentElement.classList.add('js')</script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "Eloy Verão Odontologia – Unidade SP",
-    "description": "Clínica odontológica no Jardim Aricanduva, São Paulo, desde 2002: clínica geral, ortodontia, implante e prótese, clareamento, tratamento de canal e harmonização orofacial. Convênios e particular.",
-    "image": "assets/img/og-eloy-verao.jpg",
-    "logo": "assets/img/logo-cor.png",
+    "description": "Clínica odontológica no Jardim Aricanduva, São Paulo, desde 2002: consulta e prevenção, crianças, tratamento de canal, aparelho e alinhador, implante e prótese, clareamento e harmonização orofacial. Convênios e particular.",
+    "url": "https://eloy-verao-demo.vercel.app/",
+    "image": "https://eloy-verao-demo.vercel.app/assets/img/og-eloy-verao.jpg",
+    "logo": "https://eloy-verao-demo.vercel.app/assets/img/logo-cor.png",
     "telephone": "+55 11 96499-9718",
     "foundingDate": "2002",
     "address": {
@@ -59,480 +62,690 @@
 </head>
 <body>
   <svg class="sprite" aria-hidden="true" focusable="false">
-    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
-    <symbol id="i-seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h13M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.870 9.870 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.860 9.860 0 01-1.510-5.260c.001-5.450 4.436-9.884 9.888-9.884 2.640 0 5.122 1.030 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.450-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.050 0C5.495 0 .160 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.480-8.413Z"/></symbol>
+    <symbol id="i-seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-seta-baixo" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-fora" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-google" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></symbol>
     <symbol id="i-estrela" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.75 5.86 6.42.78-4.74 4.41 1.22 6.35L12 17.1l-5.65 3.1 1.22-6.35-4.74-4.41 6.42-.78z"/></symbol>
-    <symbol id="i-pino" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
-    <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7.5V12l3 2"/></symbol>
-    <symbol id="i-telefone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M6.6 3.5h2.6l1.4 4.1-2 1.4a11.5 11.5 0 006.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 01-2.1 2A16.5 16.5 0 014.6 5.6a2 2 0 012-2.1z"/></symbol>
-    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
-    <symbol id="i-mais" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
-    <symbol id="i-arraste" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></symbol>
+    <symbol id="i-pino" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-telefone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.070 19.500 19.500 0 0 1-6-6 19.790 19.790 0 0 1-3.070-8.670A2 2 0 0 1 4.110 2h3a2 2 0 0 1 2 1.720c.130.960.360 1.900.700 2.810a2 2 0 0 1-.450 2.110L8.090 9.910a16 16 0 0 0 6 6l1.270-1.270a2 2 0 0 1 2.110-.450c.910.340 1.850.570 2.810.700A2 2 0 0 1 22 16.920z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-mais" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-fechar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-copiar" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-alerta" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 8v4M12 16h.01"/></symbol>
+    <symbol id="i-arraste" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" d="m9 7-5 5 5 5M15 7l5 5-5 5"/></symbol>
+    <!-- A marca de escolha: duas pontas de fita, lilás e azul, como o monograma -->
+    <symbol id="i-fita-check" viewBox="0 0 24 24"><path class="fc fc--a" pathLength="1" fill="none" stroke-width="3.2" stroke-linecap="round" d="M4 12.5 9.2 17.5"/><path class="fc fc--b" pathLength="1" fill="none" stroke-width="3.2" stroke-linecap="round" d="M9.2 17.5 20 6.5"/></symbol>
   </svg>
 
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="topo" data-topo>
-    <div class="topo__faixa">
+    <div class="topo__barra">
       <a class="marca" href="#inicio" aria-label="Eloy Verão Odontologia, Unidade São Paulo: início">
-        <img class="marca__logo marca__logo--branco" src="assets/img/logo-branco.png" alt="" width="320" height="138">
-        <img class="marca__logo marca__logo--cor" src="assets/img/logo-cor.png" alt="" width="320" height="138">
-        <span class="marca__unidade">Unidade São Paulo<br>Jardim Aricanduva</span>
+        <img class="marca__logo" src="assets/img/logo-cor.png" alt="" width="320" height="138">
+        <span class="marca__unidade"><span class="so-largo">Unidade São Paulo · Jardim Aricanduva</span><span class="so-estreito">Unidade SP · Aricanduva</span></span>
       </a>
-      <nav class="menu" data-menu aria-label="Seções">
-        <a href="#convenios" data-nav>Convênios</a>
+      <nav class="nav" aria-label="Seções">
         <a href="#tratamentos" data-nav>Tratamentos</a>
         <a href="#casos" data-nav>Casos</a>
         <a href="#equipe" data-nav>Equipe</a>
-        <a href="#avaliacoes" data-nav>Avaliações</a>
-        <a href="#contato" data-nav>Onde fica</a>
+        <a href="#contato" data-nav>Como chegar</a>
       </nav>
-      <a class="topo__whats" href="#contato" data-wa="geral" data-origem="topo" target="_blank" rel="noopener">
-        <svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Agendar</span>
+      <a class="botao botao--topo" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="geral" data-posicao="menu" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Marcar consulta</span>
       </a>
-      <button class="topo__menu" type="button" aria-expanded="false" aria-controls="menu-celular" data-menu-botao>
-        <span class="topo__menu-linhas" aria-hidden="true"></span><span class="sr">Abrir o menu</span>
+      <button class="topo__menu" type="button" aria-expanded="false" aria-controls="painel" data-menu-botao>
+        <span class="topo__menu-linhas" aria-hidden="true"></span><span class="sr" data-menu-rotulo>Abrir o menu</span>
       </button>
     </div>
-    <div class="gaveta" id="menu-celular" data-gaveta hidden>
+    <div class="painel" id="painel" data-painel hidden>
       <nav aria-label="Seções">
         <a href="#convenios">Convênios</a>
         <a href="#tratamentos">Tratamentos</a>
         <a href="#casos">Casos</a>
         <a href="#equipe">Equipe</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#contato">Onde fica</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Como chegar</a>
       </nav>
-      <a class="botao botao--acao botao--cheio gaveta__whats" href="#contato" data-wa="geral" data-origem="menu" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Agendar pelo WhatsApp</span></a>
+      <a class="botao botao--cheio" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="geral" data-posicao="menu" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Marcar consulta pelo WhatsApp</span></a>
     </div>
   </header>
 
   <main id="conteudo">
 
-    <!-- Capa: quem, onde, desde quando, a ação e a prova -->
+    <!-- Capa: quem são, onde, por que confiar e o próximo passo. A dupla aparece só aqui (única aparição da foto ig-15). -->
     <section class="capa" id="inicio" aria-labelledby="titulo-capa">
-      <div class="capa__grade">
+      <div class="capa__palco">
         <div class="capa__texto">
-          <h1 id="titulo-capa" class="capa__titulo">Dentista da família no Jardim Aricanduva, <span class="manuscrito">desde 2002</span></h1>
-          <p class="capa__lede">Clínica geral, aparelho e alinhador, implante e prótese, clareamento e harmonização orofacial. Atendemos 12 convênios e também particular.</p>
-          <div class="capa__acoes">
-            <a class="botao botao--acao" href="#contato" data-wa="geral" data-origem="capa" target="_blank" rel="noopener">
-              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
-              <span>Agendar <span class="so-grande">avaliação </span>pelo WhatsApp</span>
+          <h1 id="titulo-capa" class="capa__h1">
+            <span class="capa__onde">Dentista no Jardim Aricanduva · <span class="nao-quebra">desde 2002</span></span>
+            <span class="capa__l1">Aqui, dentista</span>
+            <span class="capa__l2">vira da família.</span>
+          </h1>
+          <p class="capa__lede">Tem paciente que se trata aqui há mais de 20 anos. A família toda num lugar só, pelo seu convênio ou particular.</p>
+          <div class="capa__acao">
+            <a class="botao capa__botao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="geral" data-posicao="capa" target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Marcar consulta pelo WhatsApp</span>
             </a>
-            <a class="link-claro" href="#convenios">Meu convênio é aceito?</a>
+            <a class="link-acao capa__plano" href="#convenios">Meu plano é aceito?<svg aria-hidden="true"><use href="#i-seta-baixo"/></svg></a>
           </div>
-          <p class="capa__unidade">WhatsApp da Unidade São Paulo: <span class="num nao-quebra">(11) 96499-9718</span></p>
-          <a class="prova" href="https://share.google/RU2vitjULDgIJO4O9" target="_blank" rel="noopener" data-medir="clique_avaliacoes_google" data-origem="capa">
-            <span class="prova__estrelas" aria-hidden="true"><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg class="prova__ultima"><use href="#i-estrela"/></svg></span>
-            <span><strong class="num">4,7</strong> no Google · <span class="num">130</span> avaliações</span>
+          <a class="capa__nota" href="https://share.google/RU2vitjULDgIJO4O9" target="_blank" rel="noopener" data-medir="clique_avaliacoes_google" data-posicao="capa">
+            <span class="estrelas" aria-hidden="true"><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg></span>
+            <span><strong class="num">4,7</strong> · <span class="num">130</span> avaliações no Google</span>
           </a>
         </div>
 
-        <figure class="capa__foto">
-          <div class="foto foto--capa" data-montar>
-            <picture>
-              <source media="(max-width: 699px)" srcset="assets/img/socios-640.webp">
-              <img src="assets/img/socios-1020.webp" width="1020" height="705" alt="Dra. Cibele Viviane da Silva e Dr. Evandro Eloy, de braços cruzados e sorrindo, com o jaleco azul-marinho da clínica.">
-            </picture>
+        <figure class="capa__figura">
+          <!-- A fita do monograma se desenha atrás da dupla (traçado e tempo aprovados na v2) -->
+          <div class="capa__fita-moldura" aria-hidden="true"><svg class="capa__fita" viewBox="0 0 850 690" aria-hidden="true" focusable="false">
+            <path class="fita fita--azul" pathLength="1" d="M186 154 L454.4 566.9 Q498 634 544.4 568.8 L743.6 289.2 Q790 224 752.3 153.4 L749.7 148.6 Q712 78 632.0 79.9 L458 84"/>
+            <path class="fita fita--lilas" pathLength="1" d="M342 380 L472.5 271.9 Q528 226 488.7 165.7 L447.3 102.3 Q408 42 343.1 73.1 L126.9 176.9 Q62 208 98.6 270.0 L271.4 562.0 Q308 624 375.5 598.9 L448 572"/>
+          </svg></div>
+          <picture class="capa__foto">
+            <source media="(max-width: 699px)" srcset="assets/img/socios-760.webp">
+            <img src="assets/img/socios-1120.webp" width="1120" height="810" alt="Dra. Cibele Viviane da Silva e Dr. Evandro Eloy, de braços cruzados e sorrindo, com o jaleco azul-marinho da Eloy Verão." fetchpriority="high">
+          </picture>
+          <figcaption class="vidro capa__nomes">Dra. Cibele Viviane da Silva e Dr. Evandro Eloy</figcaption>
+          <div class="vidro capa__selo" aria-hidden="true">
+            <svg class="selo__anel" viewBox="0 0 148 148" focusable="false">
+              <defs><path id="selo-circulo" d="M74 74 m-55 0 a55 55 0 1 1 110 0 a55 55 0 1 1 -110 0"/></defs>
+              <text><textPath href="#selo-circulo" textLength="344" lengthAdjust="spacing">desde 2002 · Jardim Aricanduva ·</textPath></text>
+            </svg>
+            <span class="selo__num">24</span><span class="selo__txt">anos</span>
           </div>
-          <figcaption class="legenda legenda--capa">Dra. Cibele e Dr. Evandro, sócios</figcaption>
-          <svg class="selo" viewBox="0 0 200 200" aria-hidden="true">
-            <defs><path id="selo-circulo" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
-            <circle cx="100" cy="100" r="96" class="selo__fundo"/>
-            <circle cx="100" cy="100" r="54" class="selo__miolo"/>
-            <text class="selo__volta"><textPath href="#selo-circulo" startOffset="0">Eloy Verão · Unidade São Paulo · desde 2002 ·</textPath></text>
-            <text x="100" y="104" class="selo__numero" text-anchor="middle">24</text>
-            <text x="100" y="128" class="selo__anos" text-anchor="middle">anos</text>
-          </svg>
         </figure>
       </div>
     </section>
 
-    <!-- Convênios: a primeira pergunta prática de quem tem plano -->
-    <section class="folha convenios" id="convenios" data-contexto="convenio" aria-labelledby="titulo-convenios">
-      <div class="convenios__grade">
-        <div>
-          <h2 id="titulo-convenios" class="titulo">12 convênios e particular, com o mesmo cuidado</h2>
-          <p class="texto">Se o seu plano está na lista, você já pode marcar. A cobertura muda de plano para plano e de tratamento para tratamento: escolha o seu e pergunte direto pelo WhatsApp.</p>
+    <!-- Seu plano está aqui? A lista inteira à vista; tocar no plano responde na hora e leva o plano para a mensagem -->
+    <section class="planos" id="convenios" aria-labelledby="titulo-planos">
+      <div class="planos__painel">
+        <div class="planos__lado">
+          <h2 class="h2" id="titulo-planos" data-revela>Seu plano está aqui?</h2>
+          <p class="lead planos__lead">Atendemos 12 convênios e também particular. Toque no seu.</p>
+          <div class="resposta" data-plano-resposta>
+            <div class="resposta__vazia" data-resposta-vazia>
+              <p>Toque no seu plano ao lado</p>
+              <svg class="resposta__seta" viewBox="0 0 96 40" aria-hidden="true" focusable="false"><path class="fita-traco fita-traco--lilas" pathLength="1" d="M4 30 C 30 34, 58 30, 86 16"/><path class="fita-traco fita-traco--azul" pathLength="1" d="M74 10 L 88 15 L 80 28"/></svg>
+            </div>
+            <div class="resposta__cheia" data-resposta-cheia hidden>
+              <p class="resposta__titulo" data-resposta-titulo></p>
+              <p class="resposta__apoio" data-resposta-apoio></p>
+              <a class="botao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20saber%20se%20o%20meu%20plano%20cobre%20o%20tratamento.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="convenio" data-posicao="convenios" data-resposta-botao target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-resposta-botao-texto>Perguntar se o meu plano cobre</span></a>
+            </div>
+          </div>
+          <a class="link-acao planos__sem-js" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20saber%20se%20o%20meu%20plano%20cobre%20o%20tratamento.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-whats-direto data-area="convenio" data-posicao="convenios" target="_blank" rel="noopener">Perguntar se o meu plano cobre<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+          <p class="sr" aria-live="polite" data-plano-anuncio></p>
         </div>
-        <ul class="planos" aria-label="Convênios aceitos">
-          <li>Amil Dental</li>
-          <li>DentalUni</li>
-          <li>Dentalpar</li>
-          <li>Hapvida</li>
-          <li>INPAO Dental</li>
-          <li>Interodonto</li>
-          <li>OdontoGroup</li>
-          <li>Odonto Empresas</li>
-          <li>Prevident</li>
-          <li>Santander Odontologia</li>
-          <li>SulAmérica Odonto</li>
-          <li>W.Dental</li>
-        </ul>
-        <form class="plano-pergunta" data-plano-form action="https://wa.me/5511964999718" target="_blank">
-          <label for="plano-escolha">Qual é o seu plano?</label>
-          <div class="plano-pergunta__linha">
-            <span class="selecao">
-              <select id="plano-escolha" name="plano" data-plano>
-                <option value="Amil Dental">Amil Dental</option>
-                <option value="DentalUni">DentalUni</option>
-                <option value="Dentalpar">Dentalpar</option>
-                <option value="Hapvida">Hapvida</option>
-                <option value="INPAO Dental">INPAO Dental</option>
-                <option value="Interodonto">Interodonto</option>
-                <option value="OdontoGroup">OdontoGroup</option>
-                <option value="Odonto Empresas">Odonto Empresas</option>
-                <option value="Prevident">Prevident</option>
-                <option value="Santander Odontologia">Santander Odontologia</option>
-                <option value="SulAmérica Odonto">SulAmérica Odonto</option>
-                <option value="W.Dental">W.Dental</option>
-                <option value="particular" selected>Sou particular</option>
-                <option value="outro">Outro plano</option>
-              </select>
-            </span>
-            <button class="botao botao--acao" type="submit">
-              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
-              <span>Perguntar pelo WhatsApp</span>
-            </button>
+
+        <fieldset class="planos__lista" aria-labelledby="titulo-planos" data-planos>
+          <div class="planos__grade">
+            <label class="plano"><input type="radio" name="meu-plano" value="Amil Dental"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Amil Dental</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="Dentalpar"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Dentalpar</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="DentalUni"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>DentalUni</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="Hapvida"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Hapvida</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="INPAO Dental"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>INPAO Dental</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="Interodonto"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Interodonto</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="Odonto Empresas"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Odonto Empresas</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="OdontoGroup"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>OdontoGroup</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="Prevident"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Prevident</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="Santander Odontologia"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Santander Odontologia</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="SulAmérica Odonto"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>SulAmérica Odonto</span></label>
+            <label class="plano"><input type="radio" name="meu-plano" value="W.Dental"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>W.Dental</span></label>
           </div>
-        </form>
+          <p class="planos__ou" aria-hidden="true">ou</p>
+          <div class="planos__grade planos__grade--alt">
+            <label class="plano plano--alt"><input type="radio" name="meu-plano" value="particular"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Particular</span></label>
+            <label class="plano plano--alt"><input type="radio" name="meu-plano" value="outro"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Outro plano</span></label>
+          </div>
+        </fieldset>
       </div>
     </section>
 
-    <!-- Tratamentos: entrada pela necessidade, cada linha com a sua mensagem e o seu evento -->
-    <section class="folha tratamentos" id="tratamentos" aria-labelledby="titulo-tratamentos">
-      <h2 id="titulo-tratamentos" class="titulo titulo--largo">Por onde você quer começar?</h2>
-      <ol class="indice" role="list">
-        <li class="indice__item">
-          <p class="indice__fala">“Faz tempo que não vou ao dentista.”</p>
-          <div class="indice__corpo">
-            <h3>Clínica geral e prevenção</h3>
-            <p>Consulta, limpeza, restauração e tratamento de canal, com a Dra. Aline Okuyama.</p>
-          </div>
-          <a class="indice__acao" href="#contato" data-wa="clinica" data-origem="tratamentos" target="_blank" rel="noopener">Marcar consulta<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
-        </li>
-        <li class="indice__item">
-          <p class="indice__fala">“Queria arrumar os dentes tortos.”</p>
-          <div class="indice__corpo">
-            <h3>Aparelho e alinhador</h3>
-            <p>Ortodontia com aparelho fixo ou alinhador transparente. A ortodontia é a área dos dois sócios e da Dra. Cláudia Palhares.</p>
-          </div>
-          <a class="indice__acao" href="#contato" data-wa="ortodontia" data-origem="tratamentos" target="_blank" rel="noopener">Perguntar sobre aparelho<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
-        </li>
-        <li class="indice__item">
-          <p class="indice__fala">“Perdi um dente e quero voltar a mastigar sem medo.”</p>
-          <div class="indice__corpo">
-            <h3>Implante e prótese</h3>
-            <p>Implantes, próteses, pontes e dentaduras. O plano de tratamento sai da avaliação.</p>
-          </div>
-          <a class="indice__acao" href="#contato" data-wa="implante" data-origem="tratamentos" target="_blank" rel="noopener">Agendar avaliação<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
-        </li>
-        <li class="indice__item">
-          <p class="indice__fala">“Queria os dentes mais brancos.”</p>
-          <div class="indice__corpo">
-            <h3>Clareamento dental</h3>
-            <p>Com a Dra. Giovanna Diniz. Tem um caso dela logo abaixo.</p>
-          </div>
-          <a class="indice__acao" href="#contato" data-wa="clareamento" data-origem="tratamentos" target="_blank" rel="noopener">Perguntar sobre clareamento<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
-        </li>
-        <li class="indice__item">
-          <p class="indice__fala">“Quero suavizar as linhas, sem perder a naturalidade.”</p>
-          <div class="indice__corpo">
-            <h3>Harmonização orofacial</h3>
-            <p>Toxina botulínica, preenchimento e bioestimulador de colágeno, com a Dra. Bruna Okuyama.</p>
-          </div>
-          <a class="indice__acao" href="#contato" data-wa="harmonizacao" data-origem="tratamentos" target="_blank" rel="noopener">Falar sobre harmonização<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
-        </li>
-        <li class="indice__item">
-          <p class="indice__fala">“Meu filho tem medo de dentista.”</p>
-          <div class="indice__corpo">
-            <h3>Atendimento infantil</h3>
-            <p>Consulta com calma e paciência, do jeito que as famílias contam nas avaliações.</p>
-          </div>
-          <a class="indice__acao" href="#contato" data-wa="criancas" data-origem="tratamentos" target="_blank" rel="noopener">Marcar para uma criança<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
-        </li>
-      </ol>
-    </section>
+    <!-- O que a gente faz: competência. Ilustrações geradas (a série do prompts-gemini.md), nunca como resultado de paciente.
+         As 8 entraram em 07/10/2026 (geradas pela Ana Julia no Gemini; escolha e proveniência em .trabalho/proveniencia-img/).
+         Para refazer uma: ver site/README.md, seção Ilustrações (o script troca o bloco marcado ilustra:nome pela imagem). -->
+    <section class="trat" id="tratamentos" aria-labelledby="titulo-trat">
+      <div class="grade">
+        <div class="trat__cabeca">
+          <h2 class="h2" id="titulo-trat" data-revela>O que a gente faz</h2>
+          <p class="lead">Da primeira consulta das crianças ao implante dos avós, aqui no bairro.</p>
+        </div>
 
-    <!-- Casos reais publicados pela clínica. Antes da versão oficial: confirmar a autorização de cada paciente. -->
-    <section class="folha casos" id="casos" aria-labelledby="titulo-casos">
-      <div class="casos__topo">
-        <h2 id="titulo-casos" class="titulo">Antes e depois, de pacientes da clínica</h2>
-        <p class="texto">Fotos de casos que a própria clínica publicou. Cada caso é único: o plano e o resultado dependem da avaliação.</p>
-      </div>
-
-      <figure class="caso-principal">
-        <div class="foto foto--caso" data-montar>
-          <div class="comparar" data-comparar>
-            <div class="comparar__palco" data-palco>
-              <img class="comparar__antes" src="assets/img/caso-clareamento-antes-1200.webp" srcset="assets/img/caso-clareamento-antes-720.webp 720w, assets/img/caso-clareamento-antes-1200.webp 1200w" sizes="(max-width: 700px) 92vw, 880px" width="1200" height="593" alt="Antes do clareamento: sorriso com os dentes amarelados." loading="lazy" decoding="async">
-              <div class="comparar__depois-moldura">
-                <img class="comparar__depois" src="assets/img/caso-clareamento-depois-1200.webp" srcset="assets/img/caso-clareamento-depois-720.webp 720w, assets/img/caso-clareamento-depois-1200.webp 1200w" sizes="(max-width: 700px) 92vw, 880px" width="1200" height="593" alt="Depois do clareamento: o mesmo sorriso com os dentes mais claros." loading="lazy" decoding="async">
+        <div class="trat__grupo trat__grupo--dia">
+          <h3 class="trat__grupo-titulo">Para o dia a dia da família</h3>
+          <ul class="dia" role="list">
+            <li class="card card--dia" data-revela>
+              <figure class="ilustra" data-ilustra="checkup" data-alt="Espelho e sonda de exame sobre uma bandeja lilás, com rolinhos de algodão." data-sizes="(max-width: 699px) 96px, 200px">
+                <!--ilustra:checkup--><img src="assets/img/ilustra-checkup-1200.webp" srcset="assets/img/ilustra-checkup-600.webp 600w, assets/img/ilustra-checkup-1200.webp 1200w" sizes="(max-width: 699px) 96px, 200px" width="1200" height="900" alt="Espelho e sonda de exame sobre uma bandeja lilás, com rolinhos de algodão." loading="lazy" decoding="async"><!--/ilustra:checkup-->
+              </figure>
+              <div class="card__texto">
+                <h4 class="card__titulo">Consulta, limpeza e prevenção</h4>
+                <p>Sem bronca: a gente vê como estão os seus dentes, limpa e diz por onde começar.</p>
+                <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%3A%20consulta%20e%20limpeza.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="consulta" data-posicao="tratamentos" target="_blank" rel="noopener">Marcar consulta<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
               </div>
-              <span class="comparar__rotulo comparar__rotulo--antes" aria-hidden="true">Antes</span>
-              <span class="comparar__rotulo comparar__rotulo--depois" aria-hidden="true">Depois</span>
-              <span class="comparar__alca" aria-hidden="true"><svg><use href="#i-arraste"/></svg></span>
-            </div>
-            <label class="sr" for="comparar-controle">Arraste para comparar antes e depois do clareamento</label>
-            <input class="comparar__controle" id="comparar-controle" type="range" min="0" max="100" value="50" data-controle>
-          </div>
+            </li>
+            <!-- PROVISÓRIO: confirmar com a clínica quem atende crianças hoje (Dra. Giovanna, segundo as avaliações) -->
+            <li class="card card--dia" data-revela>
+              <figure class="ilustra" data-ilustra="criancas" data-alt="Mão de criança segurando uma escova de dentes infantil azul, ao lado de um copinho." data-sizes="(max-width: 699px) 96px, 200px">
+                <!--ilustra:criancas--><img src="assets/img/ilustra-criancas-1200.webp" srcset="assets/img/ilustra-criancas-600.webp 600w, assets/img/ilustra-criancas-1200.webp 1200w" sizes="(max-width: 699px) 96px, 200px" width="1200" height="900" alt="Mão de criança segurando uma escova de dentes infantil azul, ao lado de um copinho." loading="lazy" decoding="async"><!--/ilustra:criancas-->
+              </figure>
+              <div class="card__texto">
+                <h4 class="card__titulo">Crianças</h4>
+                <p>Da primeira consulta às revisões, com paciência para quem tem medo.</p>
+                <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta%20para%20uma%20crian%C3%A7a.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="criancas" data-posicao="tratamentos" target="_blank" rel="noopener">Marcar para uma criança<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+              </div>
+            </li>
+            <li class="card card--dia" data-revela>
+              <figure class="ilustra" data-ilustra="canal" data-alt="Modelo de um dente cortado ao meio, mostrando o canal por dentro da raiz." data-sizes="(max-width: 699px) 96px, 200px">
+                <!--ilustra:canal--><img src="assets/img/ilustra-canal-1200.webp" srcset="assets/img/ilustra-canal-600.webp 600w, assets/img/ilustra-canal-1200.webp 1200w" sizes="(max-width: 699px) 96px, 200px" width="1200" height="900" alt="Modelo de um dente cortado ao meio, mostrando o canal por dentro da raiz." loading="lazy" decoding="async"><!--/ilustra:canal-->
+              </figure>
+              <div class="card__texto">
+                <h4 class="card__titulo">Tratamento de canal</h4>
+                <p>Quando a dor vem de dentro do dente: o canal limpa a raiz e mantém o seu dente.</p>
+                <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%3A%20tratamento%20de%20canal.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="canal" data-posicao="tratamentos" target="_blank" rel="noopener">Perguntar sobre canal<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <figcaption class="caso-principal__legenda">
-          <span class="legenda">Clareamento em 3 sessões</span>
-          <span class="caso-principal__quem">Dra. Giovanna Diniz · arraste para comparar</span>
-        </figcaption>
-      </figure>
 
-      <ul class="casos__lista" role="list">
-        <li class="caso">
-          <div class="caso__par" data-montar>
-            <figure class="foto foto--mini"><img src="assets/img/caso-protese-antes-760.webp" width="760" height="435" alt="Antes: sorriso com dentes desgastados e amarelados." loading="lazy" decoding="async"><figcaption>Antes</figcaption></figure>
-            <figure class="foto foto--mini"><img src="assets/img/caso-protese-depois-760.webp" width="760" height="435" alt="Depois: sorriso com os dentes da frente refeitos e alinhados." loading="lazy" decoding="async"><figcaption>Depois</figcaption></figure>
-          </div>
-          <p class="caso__texto"><span class="legenda">Reabilitação do sorriso</span>Caso publicado pela clínica.</p>
-        </li>
-        <li class="caso">
-          <div class="caso__par" data-montar>
-            <figure class="foto foto--mini"><img src="assets/img/caso-orto-antes-558.webp" width="558" height="335" alt="Antes: dentes apinhados e desalinhados." loading="lazy" decoding="async"><figcaption>Antes</figcaption></figure>
-            <figure class="foto foto--mini"><img src="assets/img/caso-orto-durante-558.webp" width="558" height="335" alt="Durante o tratamento: os mesmos dentes já alinhando, com aparelho fixo." loading="lazy" decoding="async"><figcaption>Durante</figcaption></figure>
-          </div>
-          <p class="caso__texto"><span class="legenda">Ortodontia, em andamento</span>Dra. Cláudia Palhares.</p>
-        </li>
-        <li class="caso">
-          <div class="caso__par" data-montar>
-            <figure class="foto foto--mini"><img src="assets/img/caso-toxina-antes-760.webp" width="760" height="338" alt="Antes: testa com linhas de expressão marcadas." loading="lazy" decoding="async"><figcaption>Antes</figcaption></figure>
-            <figure class="foto foto--mini"><img src="assets/img/caso-toxina-depois-760.webp" width="760" height="338" alt="Depois: a mesma testa com as linhas suavizadas." loading="lazy" decoding="async"><figcaption>Depois</figcaption></figure>
-          </div>
-          <p class="caso__texto"><span class="legenda">Toxina botulínica na testa</span>Dra. Bruna Okuyama.</p>
-        </li>
-      </ul>
-      <p class="nota">Demonstração: na versão oficial, cada caso entra só com a autorização do paciente confirmada.</p>
-    </section>
-
-    <!-- Equipe e história. "mestre em Ortodontia" é PROVISÓRIO: é como a clínica apresenta o Dr. Evandro; o título registrado não foi conferido. -->
-    <section class="folha equipe" id="equipe" aria-labelledby="titulo-equipe">
-      <div class="equipe__historia">
-        <div>
-          <h2 id="titulo-equipe" class="titulo">Quem cuida de você</h2>
-          <p class="texto">Em 2002, o Dr. Evandro Eloy, <span data-provisorio="titulo">mestre em Ortodontia</span>, abriu a clínica aqui em São Paulo. Hoje ele divide a direção com a Dra. Cibele Viviane da Silva, que também atende ortodontia. Tem paciente que se trata aqui há mais de 20 anos.</p>
+        <div class="trat__grupo trat__grupo--plano">
+          <h3 class="trat__grupo-titulo">Para o que você vem planejando</h3>
+          <ul class="bento" role="list">
+            <li class="card card--largo card--implante" data-revela>
+              <figure class="ilustra" data-ilustra="implante" data-alt="Implante dentário de titânio com a coroa de porcelana, ao lado de um modelo de arcada." data-sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 440px">
+                <!--ilustra:implante--><img src="assets/img/ilustra-implante-1200.webp" srcset="assets/img/ilustra-implante-600.webp 600w, assets/img/ilustra-implante-1200.webp 1200w" sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 440px" width="1200" height="900" alt="Implante dentário de titânio com a coroa de porcelana, ao lado de um modelo de arcada." loading="lazy" decoding="async"><!--/ilustra:implante-->
+              </figure>
+              <div class="card__texto">
+                <h4 class="card__titulo">Implante e prótese</h4>
+                <p>Repõe o dente que falta, preso no osso, para mastigar sem medo. Implante, prótese, ponte ou dentadura: na avaliação você vê o plano etapa por etapa.</p>
+                <div class="card__acoes">
+                  <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%3A%20implante%20ou%20pr%C3%B3tese.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="implante" data-posicao="tratamentos" target="_blank" rel="noopener">Quero avaliar implante<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+                  <a class="link-caso" href="#casos" data-ver-caso="reabilitacao">Ver um caso real</a>
+                </div>
+              </div>
+            </li>
+            <li class="card card--alto" data-revela>
+              <figure class="ilustra" data-ilustra="aparelho" data-alt="Alinhador transparente no estojo, ao lado de um bráquete de aparelho fixo." data-sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 360px">
+                <!--ilustra:aparelho--><img src="assets/img/ilustra-aparelho-1200.webp" srcset="assets/img/ilustra-aparelho-600.webp 600w, assets/img/ilustra-aparelho-1200.webp 1200w" sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 360px" width="1200" height="900" alt="Alinhador transparente no estojo, ao lado de um bráquete de aparelho fixo." loading="lazy" decoding="async"><!--/ilustra:aparelho-->
+              </figure>
+              <div class="card__texto">
+                <h4 class="card__titulo">Aparelho e alinhador</h4>
+                <p>Aparelho fixo ou alinhador transparente: na avaliação você vê qual serve para o seu caso.</p>
+                <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%3A%20aparelho%20ou%20alinhador.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="ortodontia" data-posicao="tratamentos" target="_blank" rel="noopener">Quero avaliar aparelho<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+              </div>
+            </li>
+            <li class="card card--alto" data-revela>
+              <figure class="ilustra" data-ilustra="clareamento" data-alt="Moldeira de clareamento transparente ao lado de uma seringa de gel." data-sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 360px">
+                <!--ilustra:clareamento--><img src="assets/img/ilustra-clareamento-1200.webp" srcset="assets/img/ilustra-clareamento-600.webp 600w, assets/img/ilustra-clareamento-1200.webp 1200w" sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 360px" width="1200" height="900" alt="Moldeira de clareamento transparente ao lado de uma seringa de gel." loading="lazy" decoding="async"><!--/ilustra:clareamento-->
+              </figure>
+              <div class="card__texto">
+                <h4 class="card__titulo">Clareamento</h4>
+                <p>Dentes mais claros, com acompanhamento da dentista do começo ao fim.</p>
+                <div class="card__acoes">
+                  <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%3A%20clareamento.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="clareamento" data-posicao="tratamentos" target="_blank" rel="noopener">Perguntar sobre clareamento<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+                  <a class="link-caso" href="#casos" data-ver-caso="clareamento">Ver um caso real</a>
+                </div>
+              </div>
+            </li>
+            <!-- PROVISÓRIO: confirmar que a harmonização orofacial segue sendo feita na Unidade SP (Dra. Bruna Okuyama) -->
+            <li class="card card--largo card--hof" data-revela data-provisorio="hof">
+              <figure class="ilustra" data-ilustra="harmonizacao" data-alt="Desenho em linha de um rosto, com as áreas de tratamento marcadas em lilás." data-sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 440px">
+                <!--ilustra:harmonizacao--><img src="assets/img/ilustra-harmonizacao-1200.webp" srcset="assets/img/ilustra-harmonizacao-600.webp 600w, assets/img/ilustra-harmonizacao-1200.webp 1200w" sizes="(max-width: 699px) calc(100vw - 64px), (max-width: 1099px) 45vw, 440px" width="1200" height="900" alt="Desenho em linha de um rosto, com as áreas de tratamento marcadas em lilás." loading="lazy" decoding="async"><!--/ilustra:harmonizacao-->
+              </figure>
+              <div class="card__texto">
+                <h4 class="card__titulo">Harmonização orofacial</h4>
+                <p>Toxina botulínica, preenchimento e bioestimulador. Na avaliação, você fala do que quer, e do que não quer.</p>
+                <div class="card__acoes">
+                  <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%3A%20harmoniza%C3%A7%C3%A3o%20orofacial.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="harmonizacao" data-posicao="tratamentos" target="_blank" rel="noopener">Perguntar sobre harmonização<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+                  <a class="link-caso" href="#casos" data-ver-caso="toxina">Ver um caso real</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <blockquote class="citacao">
-          <p>Desde o início, nosso propósito sempre foi cuidar de pessoas com excelência, ética e humanização.</p>
-          <footer>Dr. Evandro Eloy, fundador</footer>
-        </blockquote>
-      </div>
-
-      <ul class="equipe__fotos" role="list">
-        <li class="pessoa pessoa--a">
-          <div class="foto foto--retrato" data-montar>
-            <img src="assets/img/giovanna-640.webp" srcset="assets/img/giovanna-420.webp 420w, assets/img/giovanna-640.webp 640w" sizes="(max-width: 700px) 70vw, 320px" width="640" height="800" alt="Dra. Giovanna Diniz sorrindo, de jaleco bege." loading="lazy" decoding="async">
-          </div>
-          <p class="legenda">Dra. Giovanna Diniz</p>
-          <p class="pessoa__papel">Cirurgiã-dentista. Clareamento e atendimento de crianças.</p>
-        </li>
-        <li class="pessoa pessoa--b">
-          <div class="foto foto--retrato" data-montar>
-            <img src="assets/img/bruna-565.webp" srcset="assets/img/bruna-420.webp 420w, assets/img/bruna-565.webp 565w" sizes="(max-width: 700px) 70vw, 320px" width="565" height="706" alt="Dra. Bruna Okuyama com a mão no queixo, de jaleco azul-marinho." loading="lazy" decoding="async">
-          </div>
-          <p class="legenda">Dra. Bruna Okuyama</p>
-          <p class="pessoa__papel">Harmonização orofacial: toxina, preenchimento e bioestimulador.</p>
-        </li>
-        <li class="pessoa pessoa--c">
-          <div class="foto foto--retrato" data-montar>
-            <img src="assets/img/luciana-430.webp" width="430" height="538" alt="Luciana, técnica em saúde bucal, sorrindo, de jaleco branco." loading="lazy" decoding="async">
-          </div>
-          <p class="legenda">Luciana, a Lú</p>
-          <p class="pessoa__papel">Técnica em saúde bucal.</p>
-        </li>
-      </ul>
-      <p class="equipe__mais"><span>Também na equipe: Dra. Cláudia Palhares, na ortodontia, e Dra. Aline Okuyama, no tratamento de canal.</span></p>
-    </section>
-
-    <!-- Avaliações copiadas do Google em 05/10/2026 (prints google-03, 05 e 09): texto e primeiro nome exatamente como aparecem -->
-    <section class="folha avaliacoes" id="avaliacoes" aria-labelledby="titulo-avaliacoes">
-      <div class="avaliacoes__topo">
-        <h2 id="titulo-avaliacoes" class="titulo">Nota 4,7 no Google, em 130 avaliações</h2>
-        <p class="texto">Os pacientes falam da equipe pelo nome. Algumas das avaliações, com as palavras de quem escreveu:</p>
-      </div>
-
-      <figure class="destaque">
-        <blockquote><p>Atendimento maravilhoso. Profissionais de excelência. Sou paciente há mais de 20 anos e super indico.</p></blockquote>
-        <figcaption><span class="autor">SIMONE</span> · há 2 anos</figcaption>
-      </figure>
-
-      <div class="dedicatorias">
-        <figure class="dedicatoria">
-          <blockquote><p>A minha filha passa na eloy verao, com a Dra Janaina desde 2022. E a Dra janaina conseguiu tirar todos os traumas que ela teve de atendimentos anteriores, nao troco por nada e sou muito grata pelo atendimento humanizado que ela tem.</p></blockquote>
-          <figcaption><span class="autor">Adriely</span> · há 7 meses</figcaption>
-        </figure>
-        <figure class="dedicatoria">
-          <blockquote><p>Dra Giovanna sensacional com crianças. Uma paciência enorme e bem delicada.</p></blockquote>
-          <figcaption><span class="autor">Renata</span> · há 2 meses</figcaption>
-        </figure>
-        <figure class="dedicatoria">
-          <blockquote><p>A dentista Cibele é espetacular! Carinhosa, cuidadosa e se importa muito com o paciente. Adorei o ambiente! Super recomendo e indico, a Dra Cibele já é dentista da família e será dos amigos também.</p></blockquote>
-          <figcaption><span class="autor">cristina</span> · há 3 anos</figcaption>
-        </figure>
-        <figure class="dedicatoria">
-          <blockquote><p>Atendimento top o melhor que já tive atenciosas,simpáticas super indico […] Hoje em especial a técnica Luciana amei parabéns pelo trabalho que faz com dedicação.</p></blockquote>
-          <figcaption><span class="autor">Cynalva</span> · há 2 meses</figcaption>
-        </figure>
-        <figure class="dedicatoria">
-          <blockquote><p>Atendimento maravilhoso, recepcionistas super gentis e competentes, dentista Dra Alice é uma profissional incrível e muito zelosa.</p></blockquote>
-          <figcaption><span class="autor">Mara</span> · há 5 meses</figcaption>
-        </figure>
-      </div>
-
-      <p class="avaliacoes__rodape">
-        <a class="link-seta" href="https://share.google/RU2vitjULDgIJO4O9" target="_blank" rel="noopener" data-medir="clique_avaliacoes_google" data-origem="avaliacoes">Ler todas as avaliações no Google<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
-        <span class="nota">Avaliações copiadas do Google em 5 de outubro de 2026.</span>
-      </p>
-    </section>
-
-    <!-- Dúvidas -->
-    <section class="folha duvidas" id="duvidas" aria-labelledby="titulo-duvidas">
-      <div class="duvidas__grade">
-      <h2 id="titulo-duvidas" class="titulo">Antes de marcar</h2>
-      <div class="perguntas">
-        <details>
-          <summary>Vocês atendem o meu convênio?<svg aria-hidden="true"><use href="#i-mais"/></svg></summary>
-          <p>Atendemos 12 convênios: Amil Dental, DentalUni, Dentalpar, Hapvida, INPAO Dental, Interodonto, OdontoGroup, Odonto Empresas, Prevident, Santander Odontologia, SulAmérica Odonto e W.Dental. A cobertura de cada tratamento depende do seu plano; a recepção confirma pelo WhatsApp.</p>
-        </details>
-        <details>
-          <summary>Atendem crianças?<svg aria-hidden="true"><use href="#i-mais"/></svg></summary>
-          <p>Sim. A Dra. Giovanna Diniz atende crianças, e muitas famílias contam nas avaliações que os filhos perderam o medo de dentista aqui.</p>
-        </details>
-        <details>
-          <summary>Quanto custa?<svg aria-hidden="true"><use href="#i-mais"/></svg></summary>
-          <p>Depende do tratamento e do seu caso, por isso o valor é definido na avaliação, sem compromisso de fechar nada na hora. Se você não tem plano, pergunte pelas condições para particular.</p>
-        </details>
-        <details>
-          <summary>Abre aos sábados?<svg aria-hidden="true"><use href="#i-mais"/></svg></summary>
-          <!-- PROVISÓRIO: horário tirado de um post do Instagram -->
-          <p data-provisorio="horario">Sim, das 9h às 14h. De segunda a sexta, o atendimento vai das 9h às 19h.</p>
-        </details>
-        <details>
-          <summary>Esta é a Eloy Verão de Dourados?<svg aria-hidden="true"><use href="#i-mais"/></svg></summary>
-          <p>Não. Este site é da Unidade São Paulo, no Jardim Aricanduva. A Eloy Verão também tem uma unidade em Dourados (MS), com outro endereço e outro WhatsApp.</p>
-        </details>
-      </div>
+        <p class="trat__nota">Imagens ilustrativas.</p>
       </div>
     </section>
 
-    <!-- Contato: contracapa -->
-    <section class="contracapa" id="contato" aria-labelledby="titulo-contato">
-      <div class="contracapa__grade">
-        <div class="contracapa__lugar">
-          <h2 id="titulo-contato" class="titulo titulo--claro">Fica na Rua Antônio La Giudice, 345</h2>
-          <figure class="contracapa__foto">
-            <div class="foto foto--fachada" data-montar>
-              <img src="assets/img/fachada-486.webp" width="486" height="608" alt="Fachada da clínica Eloy Verão Odontologia, com o letreiro azul e roxo sobre a marquise listrada." loading="lazy" decoding="async">
+    <!-- Casos: só casos publicados pela clínica, só diagnóstico e conclusão (Resolução CFO-196/2019). Nunca ig-12 (banco) nem ig-29 ("durante"). Nunca ilustração aqui.
+         Antes da versão oficial: autorização de cada paciente; regra do CFO para antes e depois em HOF a conferir. -->
+    <section class="casos" id="casos" aria-labelledby="titulo-casos">
+      <div class="grade">
+        <div class="casos__cabeca">
+          <h2 id="titulo-casos" class="h2" data-revela>Casos de pacientes daqui</h2>
+          <p class="lead">Fotos que a própria clínica publicou. Arraste a linha para comparar o antes e o depois.</p>
+        </div>
+
+        <div class="casos__grade">
+          <figure class="comparador" data-comparar>
+            <div class="comparador__palco">
+              <div class="comparador__quadro" data-palco>
+                <img class="comparador__antes" data-img="antes" src="assets/img/caso-clareamento-antes-1200.webp" srcset="assets/img/caso-clareamento-antes-720.webp 720w, assets/img/caso-clareamento-antes-1200.webp 1200w, assets/img/caso-clareamento-antes-2000.webp 2000w" sizes="(max-width: 1099px) 100vw, 840px" width="1200" height="750" alt="Antes do clareamento: sorriso com os dentes amarelados." loading="lazy" decoding="async">
+                <div class="comparador__depois">
+                  <img data-img="depois" src="assets/img/caso-clareamento-depois-1200.webp" srcset="assets/img/caso-clareamento-depois-720.webp 720w, assets/img/caso-clareamento-depois-1200.webp 1200w, assets/img/caso-clareamento-depois-2000.webp 2000w" sizes="(max-width: 1099px) 100vw, 840px" width="1200" height="750" alt="Depois do clareamento: o mesmo sorriso com os dentes mais claros." loading="lazy" decoding="async">
+                </div>
+                <span class="comparador__rotulo comparador__rotulo--antes" aria-hidden="true">Antes</span>
+                <span class="comparador__rotulo comparador__rotulo--depois" aria-hidden="true">Depois</span>
+                <span class="comparador__linha" aria-hidden="true"><span class="comparador__alca"><svg><use href="#i-arraste"/></svg></span></span>
+              </div>
+              <label class="sr" for="comparar-controle" data-caso-rotulo>Comparar antes e depois: clareamento</label>
+              <input class="comparador__controle" id="comparar-controle" type="range" min="0" max="100" step="2" value="50" data-controle>
             </div>
-            <figcaption class="legenda legenda--clara">a fachada, no 345</figcaption>
+            <figcaption class="vidro ficha" data-caso-painel>
+              <span class="ficha__titulo">Clareamento · <span data-provisorio="sessoes">3 sessões</span></span>
+              <span class="ficha__quem">Dra. Giovanna Diniz</span>
+            </figcaption>
           </figure>
-          <dl class="dados">
-            <div>
-              <dt><svg aria-hidden="true"><use href="#i-pino"/></svg>Endereço</dt>
-              <dd>Rua Antônio La Giudice, 345<br>Jardim Aricanduva, São Paulo – SP<br><span class="num">03456-060</span><br>
-                <a class="link-seta link-seta--claro" href="https://www.google.com/maps/search/?api=1&amp;query=Eloy%20Ver%C3%A3o%20Odontologia%20Rua%20Ant%C3%B4nio%20La%20Giudice%20345%20S%C3%A3o%20Paulo" target="_blank" rel="noopener" data-medir="clique_rota" data-origem="contato">Como chegar<svg aria-hidden="true"><use href="#i-seta"/></svg></a></dd>
-            </div>
-            <div>
-              <dt><svg aria-hidden="true"><use href="#i-relogio"/></svg>Horário</dt>
-              <!-- PROVISÓRIO: horário tirado de um post do Instagram; confirmar com a clínica -->
-              <dd data-provisorio="horario">Segunda a sexta, das 9h às 19h<br>Sábado, das 9h às 14h</dd>
-            </div>
-            <div>
-              <dt><svg aria-hidden="true"><use href="#i-telefone"/></svg>Telefones</dt>
-              <dd><a href="#contato" data-wa="geral" data-origem="contato-dados" target="_blank" rel="noopener">WhatsApp <span class="num">(11) 96499-9718</span></a><br>
-                <a href="tel:+551127266239" data-medir="clique_telefone" data-origem="contato">Fixo <span class="num">(11) 2726-6239</span></a></dd>
-            </div>
-          </dl>
+
+          <ul class="fila" role="list" aria-label="Escolha um caso">
+            <li><button class="fila__item" type="button" aria-pressed="true" data-caso="clareamento"><img src="assets/img/caso-clareamento-depois-720.webp" width="720" height="450" alt="" loading="lazy" decoding="async"><span class="fila__txt"><span class="fila__trat">Clareamento</span><span class="fila__quem">Dra. Giovanna Diniz</span></span></button></li>
+            <li><button class="fila__item" type="button" aria-pressed="false" data-caso="reabilitacao"><img src="assets/img/caso-reabilitacao-depois-720.webp" width="720" height="450" alt="" loading="lazy" decoding="async"><span class="fila__txt"><span class="fila__trat">Reabilitação dos dentes da frente</span><span class="fila__quem">Caso publicado pela clínica</span></span></button></li>
+            <li><button class="fila__item" type="button" aria-pressed="false" data-caso="evandro"><img src="assets/img/caso-evandro-depois-720.webp" width="720" height="450" alt="" loading="lazy" decoding="async"><span class="fila__txt"><span class="fila__trat" data-provisorio="caso-evandro">Reabilitação dos dentes de baixo</span><span class="fila__quem">Dr. Evandro Eloy</span></span></button></li>
+            <li data-provisorio="hof"><button class="fila__item" type="button" aria-pressed="false" data-caso="toxina"><img src="assets/img/caso-toxina-depois-720.webp" width="720" height="450" alt="" loading="lazy" decoding="async"><span class="fila__txt"><span class="fila__trat">Toxina botulínica na testa</span><span class="fila__quem">Dra. Bruna Okuyama</span></span></button></li>
+          </ul>
         </div>
 
-        <form class="mensagem" data-form action="https://wa.me/5511964999718" target="_blank" novalidate>
-          <h3 class="mensagem__titulo">Monte a sua mensagem</h3>
-          <p class="mensagem__apoio">Ela abre pronta no WhatsApp da Unidade São Paulo. Nada fica salvo neste site.</p>
+        <!-- Dados de cada caso (o JS troca o palco e a ficha). data-area: o interesse que vai para a mensagem. -->
+        <template data-caso-dados="clareamento" data-area="clareamento" data-antes="assets/img/caso-clareamento-antes-1200.webp" data-antes-srcset="assets/img/caso-clareamento-antes-720.webp 720w, assets/img/caso-clareamento-antes-1200.webp 1200w, assets/img/caso-clareamento-antes-2000.webp 2000w" data-depois="assets/img/caso-clareamento-depois-1200.webp" data-depois-srcset="assets/img/caso-clareamento-depois-720.webp 720w, assets/img/caso-clareamento-depois-1200.webp 1200w, assets/img/caso-clareamento-depois-2000.webp 2000w" data-alt-antes="Antes do clareamento: sorriso com os dentes amarelados." data-alt-depois="Depois do clareamento: o mesmo sorriso com os dentes mais claros." data-rotulo="clareamento">
+          <!-- PROVISÓRIO: "3 sessões" vem da publicação do caso; confirmar com a Dra. Giovanna -->
+          <span class="ficha__titulo">Clareamento · <span data-provisorio="sessoes">3 sessões</span></span>
+          <span class="ficha__quem">Dra. Giovanna Diniz</span>
+        </template>
+        <template data-caso-dados="reabilitacao" data-area="implante" data-antes="assets/img/caso-reabilitacao-antes-1200.webp" data-antes-srcset="assets/img/caso-reabilitacao-antes-720.webp 720w, assets/img/caso-reabilitacao-antes-1200.webp 1200w" data-depois="assets/img/caso-reabilitacao-depois-1200.webp" data-depois-srcset="assets/img/caso-reabilitacao-depois-720.webp 720w, assets/img/caso-reabilitacao-depois-1200.webp 1200w" data-alt-antes="Antes: sorriso com os dentes da frente desgastados e amarelados." data-alt-depois="Depois: o mesmo sorriso com os dentes da frente refeitos." data-rotulo="reabilitação dos dentes da frente">
+          <span class="ficha__titulo">Reabilitação dos dentes da frente</span>
+          <span class="ficha__quem">Caso publicado pela clínica</span>
+        </template>
+        <template data-caso-dados="evandro" data-area="implante" data-antes="assets/img/caso-evandro-antes-1200.webp" data-antes-srcset="assets/img/caso-evandro-antes-720.webp 720w, assets/img/caso-evandro-antes-1200.webp 1200w" data-depois="assets/img/caso-evandro-depois-1200.webp" data-depois-srcset="assets/img/caso-evandro-depois-720.webp 720w, assets/img/caso-evandro-depois-1200.webp 1200w" data-alt-antes="Antes: dentes de baixo desgastados e desencontrados." data-alt-depois="Depois: os dentes de baixo refeitos e alinhados." data-rotulo="reabilitação dos dentes de baixo, Dr. Evandro Eloy">
+          <!-- PROVISÓRIO: o tratamento exato deste caso está a confirmar com o Dr. Evandro -->
+          <span class="ficha__titulo" data-provisorio="caso-evandro">Reabilitação dos dentes de baixo</span>
+          <span class="ficha__quem">Dr. Evandro Eloy</span>
+        </template>
+        <template data-caso-dados="toxina" data-area="harmonizacao" data-antes="assets/img/caso-toxina-antes-1200.webp" data-antes-srcset="assets/img/caso-toxina-antes-720.webp 720w, assets/img/caso-toxina-antes-1200.webp 1200w" data-depois="assets/img/caso-toxina-depois-1200.webp" data-depois-srcset="assets/img/caso-toxina-depois-720.webp 720w, assets/img/caso-toxina-depois-1200.webp 1200w" data-alt-antes="Antes: testa com linhas de expressão marcadas." data-alt-depois="Depois: a mesma testa com as linhas suavizadas." data-rotulo="toxina botulínica na testa">
+          <span class="ficha__titulo" data-provisorio="hof">Toxina botulínica na testa</span>
+          <span class="ficha__quem">Dra. Bruna Okuyama</span>
+        </template>
 
-          <div class="campo">
-            <label for="f-nome">Seu nome</label>
-            <input id="f-nome" name="nome" type="text" autocomplete="given-name" required aria-describedby="erro-nome">
-            <p class="erro" id="erro-nome" hidden>Escreva o seu nome para a recepção saber com quem fala.</p>
+        <div class="casos__pe">
+          <a class="link-acao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%3A%20clareamento.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="clareamento" data-posicao="casos" data-caso-acao target="_blank" rel="noopener">Quero saber se dá para o meu caso<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+          <p class="casos__nota">Casos reais da clínica. Na versão oficial, cada caso entra só com a autorização do paciente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quem vai te atender: o momento das fotos individuais (cada retrato aparece só aqui). Mesmo padrão para todos: foto, nome, o que faz. -->
+    <section class="equipe" id="equipe" aria-labelledby="titulo-equipe">
+      <div class="grade">
+        <div class="equipe__cabeca">
+          <h2 id="titulo-equipe" class="h2" data-revela>Quem vai te atender</h2>
+          <p class="lead">Cada um cuida de uma parte do seu tratamento.</p>
+        </div>
+        <ul class="arcos" role="list">
+          <!-- PROVISÓRIO: área de cada dentista a confirmar com a clínica; "ortodontista" e "especialista" não entram no texto -->
+          <li class="arco arco--evandro" data-arco>
+            <div class="arco__corpo">
+              <div class="arco__moldura"><img src="assets/img/equipe-evandro.webp" width="528" height="660" alt="Dr. Evandro Eloy sorrindo, de jaleco azul-marinho." loading="lazy" decoding="async"></div>
+              <svg class="arco__fitas" viewBox="-15 -20 330 440" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="af af--azul" pathLength="1" d="M313 400 V150 A163 163 0 0 0 34 35"/><path class="af af--lilas" pathLength="1" d="M-7 400 V150 A157 157 0 0 1 261 39"/></svg>
+            </div>
+            <p class="arco__nome">Dr. Evandro Eloy</p>
+            <p class="arco__faz" data-provisorio="area-evandro">Ortodontia</p>
+          </li>
+          <li class="arco arco--cibele" data-arco>
+            <div class="arco__corpo">
+              <div class="arco__moldura"><img src="assets/img/equipe-cibele.webp" width="536" height="670" alt="Dra. Cibele Viviane da Silva sorrindo, de jaleco branco e faixa no cabelo." loading="lazy" decoding="async"></div>
+              <svg class="arco__fitas" viewBox="-15 -20 330 440" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="af af--azul" pathLength="1" d="M313 400 V150 A163 163 0 0 0 34 35"/><path class="af af--lilas" pathLength="1" d="M-7 400 V150 A157 157 0 0 1 261 39"/></svg>
+            </div>
+            <p class="arco__nome">Dra. Cibele Viviane da Silva</p>
+            <p class="arco__faz" data-provisorio="area-cibele">Ortodontia</p>
+          </li>
+          <li class="arco arco--giovanna" data-arco>
+            <div class="arco__corpo">
+              <div class="arco__moldura"><img src="assets/img/equipe-giovanna.webp" width="600" height="750" alt="Dra. Giovanna Diniz sorrindo, de cabelo solto." loading="lazy" decoding="async"></div>
+              <svg class="arco__fitas" viewBox="-15 -20 330 440" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="af af--azul" pathLength="1" d="M313 400 V150 A163 163 0 0 0 34 35"/><path class="af af--lilas" pathLength="1" d="M-7 400 V150 A157 157 0 0 1 261 39"/></svg>
+            </div>
+            <p class="arco__nome">Dra. Giovanna Diniz</p>
+            <p class="arco__faz">Clínica geral, crianças e clareamento</p>
+          </li>
+          <li class="arco arco--bruna" data-arco data-provisorio="hof">
+            <div class="arco__corpo">
+              <div class="arco__moldura"><img src="assets/img/equipe-bruna.webp" width="600" height="750" alt="Dra. Bruna Okuyama com a mão no queixo, de jaleco azul-marinho." loading="lazy" decoding="async"></div>
+              <svg class="arco__fitas" viewBox="-15 -20 330 440" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="af af--azul" pathLength="1" d="M313 400 V150 A163 163 0 0 0 34 35"/><path class="af af--lilas" pathLength="1" d="M-7 400 V150 A157 157 0 0 1 261 39"/></svg>
+            </div>
+            <p class="arco__nome">Dra. Bruna Okuyama</p>
+            <p class="arco__faz">Harmonização orofacial</p>
+          </li>
+          <li class="arco arco--luciana" data-arco>
+            <div class="arco__corpo">
+              <div class="arco__moldura"><img src="assets/img/equipe-luciana.webp" width="600" height="750" alt="Luciana sorrindo, de óculos e jaleco branco." loading="lazy" decoding="async"></div>
+              <svg class="arco__fitas" viewBox="-15 -20 330 440" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="af af--azul" pathLength="1" d="M313 400 V150 A163 163 0 0 0 34 35"/><path class="af af--lilas" pathLength="1" d="M-7 400 V150 A157 157 0 0 1 261 39"/></svg>
+            </div>
+            <p class="arco__nome">Luciana</p>
+            <p class="arco__faz">Técnica em saúde bucal</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- O que os pacientes dizem: a prova do posicionamento. Avaliações copiadas do Google em 05/10/2026 (prints google-03, 05 e 09): texto, nome e data como aparecem; cortes só com […].
+         Depoimento como peça de destaque: conferir a norma do CFO antes da versão oficial. 4,7 e 130 se atualizam na publicação. -->
+    <section class="vozes" id="avaliacoes" aria-labelledby="titulo-vozes">
+      <div class="grade">
+        <div class="vozes__cabeca">
+          <h2 id="titulo-vozes" class="h2" data-revela>O que os pacientes dizem</h2>
+          <p class="lead">Avaliações públicas no Google, com as palavras de quem escreveu.</p>
+        </div>
+
+        <div class="vozes__corpo">
+          <!-- Bloco de prova: a nota real (4,7 com 130 avaliações, print de 05/10/2026) e a voz mais forte (Simone, 5 estrelas, google-09) -->
+          <figure class="nota" data-revela>
+            <div class="nota__placar">
+              <p class="nota__valor"><span class="nota__num num">4,7</span><span class="nota__de">de 5 no Google</span></p>
+              <span class="nota__estrelas" role="img" aria-label="Nota 4,7 de 5 estrelas"><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><span class="nota__parcial" aria-hidden="true"><svg><use href="#i-estrela"/></svg><span class="nota__parcial-cheia"><svg><use href="#i-estrela"/></svg></span></span></span>
+            </div>
+            <svg class="nota__aspas" viewBox="0 0 64 44" aria-hidden="true" focusable="false"><path d="M22 4 C 11 9, 5 17, 5 28"/><circle cx="14" cy="31" r="9.5"/><path d="M52 4 C 41 9, 35 17, 35 28"/><circle cx="44" cy="31" r="9.5"/></svg>
+            <blockquote class="nota__frase"><p>Atendimento maravilhoso. Profissionais de excelência. Sou paciente há mais de 20 anos e super indico.</p></blockquote>
+            <figcaption class="nota__quem"><span class="avatar avatar--claro" aria-hidden="true">S</span><span><strong>Simone</strong> · 5 estrelas · há 2 anos</span></figcaption>
+            <a class="selo-google" href="https://share.google/RU2vitjULDgIJO4O9" target="_blank" rel="noopener" data-medir="clique_avaliacoes_google" data-posicao="avaliacoes"><svg class="selo-google__g" aria-hidden="true"><use href="#i-google"/></svg><span class="selo-google__txt"><strong class="num">130 avaliações</strong> no Google</span><span class="selo-google__acao">Ler todas<svg aria-hidden="true"><use href="#i-fora"/></svg></span></a>
+          </figure>
+
+          <!-- Vozes: texto exato, primeiro nome como aparece no Google; cortes só com […]. Todas com 5 estrelas nos prints (google-03, 05, 09). -->
+          <div class="vozes__lado">
+            <ul class="vozes__trilho" role="list" aria-label="Avaliações no Google" tabindex="0" data-trilho>
+              <li class="voz voz--cristina" style="--i: 0">
+                <div class="voz__topo"><span class="avatar avatar--lilas" aria-hidden="true">C</span><span class="voz__quem"><strong>cristina</strong><span>há 3 anos</span></span><svg class="voz__g" role="img" aria-label="Avaliação no Google"><use href="#i-google"/></svg></div>
+                <span class="voz__estrelas" role="img" aria-label="5 estrelas"><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg></span>
+                <blockquote><p>“A dentista Cibele é espetacular! Carinhosa, cuidadosa e se importa muito com o paciente. […] a <mark class="citado">Dra Cibele</mark> já é dentista da família e será dos amigos também.”</p></blockquote>
+              </li>
+              <li class="voz voz--renata" style="--i: 1">
+                <div class="voz__topo"><span class="avatar avatar--azul" aria-hidden="true">R</span><span class="voz__quem"><strong>Renata</strong><span>há 2 meses</span></span><svg class="voz__g" role="img" aria-label="Avaliação no Google"><use href="#i-google"/></svg></div>
+                <span class="voz__estrelas" role="img" aria-label="5 estrelas"><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg></span>
+                <blockquote><p>“<mark class="citado">Dra Giovanna</mark> sensacional com crianças. Uma paciência enorme e bem delicada.”</p></blockquote>
+              </li>
+              <li class="voz voz--cynalva" style="--i: 2">
+                <div class="voz__topo"><span class="avatar avatar--jaleco" aria-hidden="true">C</span><span class="voz__quem"><strong>Cynalva</strong><span>há 2 meses</span></span><svg class="voz__g" role="img" aria-label="Avaliação no Google"><use href="#i-google"/></svg></div>
+                <span class="voz__estrelas" role="img" aria-label="5 estrelas"><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg></span>
+                <blockquote><p>“[…] Hoje em especial a <mark class="citado">técnica Luciana</mark> amei parabéns pelo trabalho que faz com dedicação.”</p></blockquote>
+              </li>
+              <li class="voz voz--guina" style="--i: 3">
+                <div class="voz__topo"><span class="avatar avatar--tinta" aria-hidden="true">G</span><span class="voz__quem"><strong>Guina</strong><span>há 2 meses</span></span><svg class="voz__g" role="img" aria-label="Avaliação no Google"><use href="#i-google"/></svg></div>
+                <span class="voz__estrelas" role="img" aria-label="5 estrelas"><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg><svg aria-hidden="true"><use href="#i-estrela"/></svg></span>
+                <blockquote><p>“Ótimo atendimento, ambiente muito confortável e seguro”</p></blockquote>
+              </li>
+            </ul>
+            <div class="vozes__pontos" data-pontos>
+              <button type="button" class="ponto" aria-label="Avaliação 1 de 4" aria-current="true" data-ponto="0"><span></span></button>
+              <button type="button" class="ponto" aria-label="Avaliação 2 de 4" data-ponto="1"><span></span></button>
+              <button type="button" class="ponto" aria-label="Avaliação 3 de 4" data-ponto="2"><span></span></button>
+              <button type="button" class="ponto" aria-label="Avaliação 4 de 4" data-ponto="3"><span></span></button>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <fieldset class="campo">
-            <legend>O que você procura?</legend>
-            <div class="opcoes">
-              <label><input type="radio" name="interesse" value="Consulta, limpeza ou restauração"><span>Consulta e limpeza</span></label>
-              <label><input type="radio" name="interesse" value="Aparelho ou alinhador"><span>Aparelho</span></label>
-              <label><input type="radio" name="interesse" value="Implante ou prótese"><span>Implante e prótese</span></label>
-              <label><input type="radio" name="interesse" value="Clareamento"><span>Clareamento</span></label>
-              <label><input type="radio" name="interesse" value="Harmonização orofacial"><span>Harmonização</span></label>
-              <label><input type="radio" name="interesse" value="Consulta para criança"><span>Para uma criança</span></label>
-              <label><input type="radio" name="interesse" value="Ainda não sei, quero uma avaliação"><span>Ainda não sei</span></label>
+    <!-- Como é a primeira consulta. PROVISÓRIO: o processo precisa ser confirmado com a clínica antes da versão oficial. Sem números e sem fio: três momentos com rótulo de tempo. -->
+    <section class="consulta" id="primeira-consulta" aria-labelledby="titulo-consulta" data-provisorio="processo">
+      <div class="grade">
+        <div class="consulta__cabeca">
+          <h2 id="titulo-consulta" class="h2" data-revela>Como é a primeira consulta</h2>
+          <p class="lead">Sem surpresa e sem pressa para decidir.</p>
+        </div>
+        <ol class="cartas" role="list" data-cartas>
+          <li class="carta carta--1">
+            <p class="carta__quando">Em casa, antes</p>
+            <h3 class="carta__titulo">Você conta o que procura.</h3>
+            <div class="bolha" aria-label="Exemplo da mensagem que o site monta">
+              <p class="bolha__linha">Olá! Sou Ana e quero marcar: consulta e limpeza.</p>
+              <p class="bolha__linha">Vim pelo site da Unidade São Paulo (Jardim Aricanduva).</p>
+              <p class="bolha__linha bolha__linha--espaco">Convênio: Hapvida</p>
+              <p class="bolha__linha">Melhor período: manhã</p>
+              <p class="bolha__linha bolha__linha--espaco">Obrigado!</p>
             </div>
-            <p class="erro" id="erro-interesse" hidden>Escolha uma opção. Se tiver dúvida, marque “Ainda não sei”.</p>
-          </fieldset>
+            <p class="carta__apoio">A recepção confirma o horário com você.</p>
+          </li>
+          <li class="carta carta--2">
+            <p class="carta__quando">Na cadeira</p>
+            <h3 class="carta__titulo">A dentista examina e explica as opções, e o valor, se for particular.</h3>
+            <figure class="ilustra ilustra--carta" data-ilustra="dentista-explica" data-alt="Mãos de jaleco mostrando um modelo de arcada e uma radiografia, sem rosto." data-sizes="(max-width: 699px) calc(100vw - 80px), 400px">
+              <!--ilustra:dentista-explica--><img src="assets/img/ilustra-dentista-explica-1200.webp" srcset="assets/img/ilustra-dentista-explica-600.webp 600w, assets/img/ilustra-dentista-explica-1200.webp 1200w" sizes="(max-width: 699px) calc(100vw - 80px), 400px" width="1200" height="900" alt="Mãos de jaleco mostrando um modelo de arcada e uma radiografia, sem rosto." loading="lazy" decoding="async"><!--/ilustra:dentista-explica-->
+            </figure>
+          </li>
+          <li class="carta carta--3">
+            <p class="carta__quando">Em casa, depois</p>
+            <h3 class="carta__titulo">Você decide com calma, em casa, se quiser.</h3>
+            <p class="carta__apoio">Ninguém precisa fechar nada na hora.</p>
+            <svg class="carta__laco" viewBox="0 0 240 90" aria-hidden="true" focusable="false"><path class="laco laco--lilas" pathLength="1" d="M6 70 C 50 70, 92 68, 112 46 C 130 26, 122 8, 104 12 C 84 17, 92 50, 124 62 C 156 74, 196 70, 234 70"/><path class="laco laco--azul" pathLength="1" d="M6 78 C 52 78, 104 76, 130 58 C 150 44, 150 22, 132 20 C 112 18, 110 48, 140 64 C 168 79, 200 78, 234 78"/></svg>
+          </li>
+        </ol>
+        <div class="consulta__acao">
+          <a class="botao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="geral" data-posicao="primeira-consulta" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Marcar a primeira consulta</span></a>
+        </div>
+      </div>
+    </section>
 
-          <div class="campo campo--duplo">
-            <div>
-              <label for="f-plano">Convênio</label>
-              <span class="selecao selecao--claro">
-                <select id="f-plano" name="plano">
-                  <option value="Particular">Particular</option>
-                  <option>Amil Dental</option>
-                  <option>DentalUni</option>
-                  <option>Dentalpar</option>
-                  <option>Hapvida</option>
-                  <option>INPAO Dental</option>
-                  <option>Interodonto</option>
-                  <option>OdontoGroup</option>
-                  <option>Odonto Empresas</option>
-                  <option>Prevident</option>
-                  <option>Santander Odontologia</option>
-                  <option>SulAmérica Odonto</option>
-                  <option>W.Dental</option>
-                  <option value="Outro plano">Outro plano</option>
-                </select>
-              </span>
-            </div>
-            <div>
-              <label for="f-periodo">Melhor período</label>
-              <span class="selecao selecao--claro">
-                <select id="f-periodo" name="periodo">
-                  <option>Qualquer horário</option>
-                  <option>Manhã</option>
-                  <option>Tarde</option>
-                  <option>Fim da tarde</option>
-                  <option>Sábado</option>
-                </select>
-              </span>
-            </div>
+    <!-- Antes de marcar: só o que não foi respondido acima -->
+    <section class="duvidas" id="duvidas" aria-labelledby="titulo-duvidas">
+      <div class="grade duvidas__grade">
+        <div class="duvidas__cabeca">
+          <h2 id="titulo-duvidas" class="h2" data-revela>Antes de marcar</h2>
+          <p>Não achou a sua dúvida? <a class="link-acao" href="#contato">Pergunte na mensagem<svg aria-hidden="true"><use href="#i-seta"/></svg></a></p>
+        </div>
+        <div class="perguntas">
+          <details>
+            <summary><span>Quanto custa?</span><span class="perguntas__icone" aria-hidden="true"></span></summary>
+            <!-- PROVISÓRIO: confirmar com a clínica se a avaliação é sem compromisso -->
+            <p data-provisorio="avaliacao">Depende do tratamento e do seu caso. O valor sai na avaliação, e você decide depois, sem compromisso de fechar na hora.</p>
+          </details>
+          <details>
+            <summary><span>Meu plano cobre tudo?</span><span class="perguntas__icone" aria-hidden="true"></span></summary>
+            <p>A cobertura muda de plano para plano e de tratamento para tratamento. Escolha o seu plano na mensagem, e a recepção confirma pelo WhatsApp o que ele cobre no seu caso. Sem plano, também atendemos particular.</p>
+          </details>
+          <details>
+            <summary><span>Tenho medo de dentista. Como é?</span><span class="perguntas__icone" aria-hidden="true"></span></summary>
+            <!-- PROVISÓRIO: confirmar com a clínica -->
+            <p data-provisorio="medo">Conta isso na mensagem: a dentista vai com calma e explica cada passo antes.</p>
+          </details>
+          <details>
+            <summary><span>Atendem crianças?</span><span class="perguntas__icone" aria-hidden="true"></span></summary>
+            <p>Sim. A Dra. Giovanna Diniz atende crianças. Na mensagem, marque “Para uma criança”.</p>
+          </details>
+          <details>
+            <summary><span>Abre aos sábados?</span><span class="perguntas__icone" aria-hidden="true"></span></summary>
+            <!-- PROVISÓRIO: horário tirado de um post do Instagram -->
+            <p data-provisorio="horario">Sim, das 9h às 14h. De segunda a sexta, das 9h às 19h.</p>
+          </details>
+          <details>
+            <summary><span>Esta é a Eloy Verão de Dourados?</span><span class="perguntas__icone" aria-hidden="true"></span></summary>
+            <p>Não. Este site é da Unidade São Paulo, no Jardim Aricanduva. A Eloy Verão também tem uma unidade em Dourados (MS), com outro endereço e outro WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conta o que você procura: onde a história vira mensagem. A fachada aparece só aqui (reconhecer a porta ao chegar). -->
+    <section class="fecho" id="contato" aria-labelledby="titulo-contato">
+      <div class="fecho__painel">
+        <div class="fecho__lado">
+          <h2 id="titulo-contato" class="h2 fecho__titulo">Conta o que você procura. <span class="fecho__titulo-2">A mensagem já vai pronta.</span></h2>
+
+          <div class="fecho__form" data-casa-form>
+            <!-- O mesmo componente vive aqui e na folha inferior (celular). Nada é salvo. -->
+            <form class="msg" id="mensagem" data-form action="https://wa.me/5511964999718" method="get" target="_blank" novalidate aria-labelledby="titulo-msg">
+              <h3 class="msg__titulo" id="titulo-msg">Sua mensagem para a recepção</h3>
+
+              <p class="msg__resumo" data-procura hidden>Procuro: <strong data-procura-texto></strong> · <button type="button" class="msg__trocar" data-trocar>trocar</button></p>
+              <fieldset class="campo" data-campo-interesse aria-describedby="erro-interesse">
+                <legend>O que você procura?</legend>
+                <div class="chips">
+                  <label class="chip"><input type="radio" name="interesse" value="consulta"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Consulta e limpeza</span></label>
+                  <label class="chip"><input type="radio" name="interesse" value="dor"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Dor ou urgência</span></label>
+                  <label class="chip"><input type="radio" name="interesse" value="canal"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Tratamento de canal</span></label>
+                  <label class="chip"><input type="radio" name="interesse" value="ortodontia"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Aparelho ou alinhador</span></label>
+                  <label class="chip"><input type="radio" name="interesse" value="implante"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Implante ou prótese</span></label>
+                  <label class="chip"><input type="radio" name="interesse" value="clareamento"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Clareamento</span></label>
+                  <label class="chip"><input type="radio" name="interesse" value="harmonizacao"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Harmonização orofacial</span></label>
+                  <label class="chip"><input type="radio" name="interesse" value="nao_sei"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Ainda não sei</span></label>
+                </div>
+                <p class="erro" id="erro-interesse" hidden><svg aria-hidden="true"><use href="#i-alerta"/></svg>Escolha uma opção. Se tiver dúvida, marque “Ainda não sei”.</p>
+              </fieldset>
+              <!-- PROVISÓRIO: a orientação de pronto-atendimento precisa ser validada pelo responsável técnico -->
+              <div class="msg__dor" data-dor hidden>
+                <p>Com dor, ligar também ajuda: <a class="num" href="tel:+551127266239" data-medir="clique_telefone" data-posicao="formulario">(11) 2726-6239</a>.</p>
+                <p data-provisorio="pronto-atendimento">Inchaço forte no rosto, febre ou trauma: procure um pronto-atendimento.</p>
+              </div>
+
+              <div class="campo">
+                <label for="f-nome">Seu nome</label>
+                <input id="f-nome" name="nome" type="text" autocomplete="given-name" maxlength="40" required aria-describedby="erro-nome">
+                <p class="erro" id="erro-nome" hidden><svg aria-hidden="true"><use href="#i-alerta"/></svg>Escreva o seu nome para a recepção saber com quem fala.</p>
+              </div>
+
+              <p class="msg__resumo" data-plano-resumo hidden>Convênio: <strong data-plano-resumo-texto></strong> · <button type="button" class="msg__trocar" data-plano-trocar>trocar</button></p>
+              <fieldset class="campo" data-campo-plano aria-describedby="erro-plano">
+                <legend>Convênio ou particular</legend>
+                <div class="chips">
+                  <label class="chip"><input type="radio" name="tipo" value="convenio"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Tenho convênio</span></label>
+                  <label class="chip"><input type="radio" name="tipo" value="particular"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Particular</span></label>
+                  <label class="chip"><input type="radio" name="tipo" value="nao_sei"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Não sei / vou ver</span></label>
+                </div>
+                <div class="msg__planos" data-planos-form hidden>
+                  <p class="msg__planos-rotulo" id="rotulo-qual-plano">Qual plano?</p>
+                  <div class="chips chips--planos" role="radiogroup" aria-labelledby="rotulo-qual-plano">
+                    <label class="chip"><input type="radio" name="plano" value="Amil Dental"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Amil Dental</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="Dentalpar"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Dentalpar</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="DentalUni"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>DentalUni</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="Hapvida"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Hapvida</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="INPAO Dental"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>INPAO Dental</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="Interodonto"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Interodonto</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="Odonto Empresas"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Odonto Empresas</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="OdontoGroup"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>OdontoGroup</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="Prevident"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Prevident</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="Santander Odontologia"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Santander Odontologia</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="SulAmérica Odonto"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>SulAmérica Odonto</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="W.Dental"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>W.Dental</span></label>
+                    <label class="chip"><input type="radio" name="plano" value="outro"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Outro plano</span></label>
+                  </div>
+                </div>
+                <p class="erro" id="erro-plano" hidden><svg aria-hidden="true"><use href="#i-alerta"/></svg>Escolha o seu plano. Se não tiver certeza, marque “Não sei”.</p>
+              </fieldset>
+
+              <details class="msg__opcional" data-opcional>
+                <summary><span class="msg__opcional-txt">Para agilizar <span>(opcional): para quem, primeira vez e período</span></span><svg aria-hidden="true"><use href="#i-mais"/></svg></summary>
+                <fieldset class="campo">
+                  <legend>Para quem é?</legend>
+                  <div class="chips">
+                    <label class="chip"><input type="radio" name="para" value="eu" checked><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Para mim</span></label>
+                    <label class="chip"><input type="radio" name="para" value="crianca"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Para uma criança</span></label>
+                    <label class="chip"><input type="radio" name="para" value="outro"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Para outra pessoa</span></label>
+                  </div>
+                </fieldset>
+                <fieldset class="campo">
+                  <legend>Já veio à clínica?</legend>
+                  <div class="chips">
+                    <label class="chip"><input type="radio" name="primeira" value="sim"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Primeira vez</span></label>
+                    <label class="chip"><input type="radio" name="primeira" value="nao"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Já sou paciente</span></label>
+                  </div>
+                </fieldset>
+                <fieldset class="campo">
+                  <legend>Melhor período</legend>
+                  <div class="chips">
+                    <label class="chip"><input type="radio" name="periodo" value="manhã"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Manhã</span></label>
+                    <label class="chip"><input type="radio" name="periodo" value="tarde"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Tarde</span></label>
+                    <label class="chip"><input type="radio" name="periodo" value="sábado de manhã"><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Sábado de manhã</span></label>
+                    <label class="chip"><input type="radio" name="periodo" value="qualquer horário" checked><span><svg aria-hidden="true"><use href="#i-fita-check"/></svg>Qualquer horário</span></label>
+                  </div>
+                </fieldset>
+                <details class="msg__mais">
+                  <summary>Quer contar mais? <span>(opcional)</span><svg aria-hidden="true"><use href="#i-mais"/></svg></summary>
+                  <label class="sr" for="f-obs">Observação</label>
+                  <textarea id="f-obs" name="obs" rows="3" maxlength="200" aria-describedby="obs-contador"></textarea>
+                  <p class="msg__contador num" id="obs-contador" data-contador>0 de 200</p>
+                </details>
+              </details>
+
+              <div class="msg__previa" data-previa-caixa hidden>
+                <p class="msg__previa-rotulo">Sua mensagem</p>
+                <p class="bolha bolha--previa" data-previa></p>
+              </div>
+
+              <div class="msg__envio" data-envio>
+                <button class="botao botao--cheio" type="submit" data-enviar>
+                  <svg class="botao__icone" aria-hidden="true"><use href="#i-whatsapp"/></svg><span class="botao__giro" aria-hidden="true"></span><span data-enviar-texto>Abrir no WhatsApp com a mensagem pronta</span>
+                </button>
+                <div class="msg__aberto" data-aberto hidden>
+                  <p class="msg__aberto-texto" tabindex="-1" data-aberto-texto>Abrimos o WhatsApp com a sua mensagem. <strong>Falta tocar em enviar</strong> para ela chegar à recepção.</p>
+                  <div class="msg__aberto-acoes">
+                    <a class="botao botao--cheio" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." target="_blank" rel="noopener" data-abrir-de-novo><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Abrir o WhatsApp de novo</span></a>
+                    <button class="botao-2" type="button" data-copiar><svg aria-hidden="true"><use href="#i-copiar"/></svg><span data-copiar-texto>Copiar a mensagem</span></button>
+                  </div>
+                </div>
+                <p class="sr" aria-live="polite" data-anuncio></p>
+                <p class="msg__alternativas"><a href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." target="_blank" rel="noopener" data-so-abrir>Prefiro só abrir o WhatsApp</a><span aria-hidden="true"> · </span><span>Prefere ligar? <a class="num" href="tel:+551127266239" data-medir="clique_telefone" data-posicao="formulario">(11) 2726-6239</a></span></p>
+              </div>
+
+              <ul class="msg__prova" role="list">
+                <li><svg aria-hidden="true"><use href="#i-pino"/></svg><span>Unidade São Paulo · Rua Antônio La Giudice, 345 · Jardim Aricanduva</span></li>
+                <li data-provisorio="horario"><svg aria-hidden="true"><use href="#i-relogio"/></svg><span>Seg a sex, 9h às 19h · sáb, 9h às 14h. Fora desse horário, a mensagem fica registrada para a recepção.</span></li>
+              </ul>
+              <p class="msg__privacidade">A mensagem só sai quando você tocar em enviar no WhatsApp. Este site não guarda os seus dados.</p>
+            </form>
           </div>
+        </div>
 
-          <button class="botao botao--acao botao--cheio" type="submit">
-            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
-            <span>Enviar pelo WhatsApp</span>
-          </button>
-        </form>
+        <figure class="fachada">
+          <div class="fachada__foto">
+            <img src="assets/img/fachada-486.webp" width="486" height="608" alt="Fachada da Eloy Verão Odontologia no número 345, com o letreiro azul e roxo sobre a marquise listrada." loading="lazy" decoding="async">
+          </div>
+          <figcaption class="fachada__info">
+            <div class="vidro fachada__painel fachada__painel--onde">
+              <svg class="fachada__mono" viewBox="0 0 850 690" aria-hidden="true" focusable="false" data-monograma>
+                <path class="fita fita--azul" pathLength="1" d="M186 154 L454.4 566.9 Q498 634 544.4 568.8 L743.6 289.2 Q790 224 752.3 153.4 L749.7 148.6 Q712 78 632.0 79.9 L458 84"/>
+                <path class="fita fita--lilas" pathLength="1" d="M342 380 L472.5 271.9 Q528 226 488.7 165.7 L447.3 102.3 Q408 42 343.1 73.1 L126.9 176.9 Q62 208 98.6 270.0 L271.4 562.0 Q308 624 375.5 598.9 L448 572"/>
+              </svg>
+              <p class="fachada__endereco"><strong>Rua Antônio La Giudice, 345</strong> · Jardim Aricanduva, São Paulo</p>
+              <a class="botao-2 fachada__rota" href="https://www.google.com/maps/search/?api=1&amp;query=Eloy%20Ver%C3%A3o%20Odontologia%20Rua%20Ant%C3%B4nio%20La%20Giudice%20345%20S%C3%A3o%20Paulo" target="_blank" rel="noopener" data-medir="clique_rota" data-posicao="contato"><svg aria-hidden="true"><use href="#i-pino"/></svg><span>Como chegar</span></a>
+            </div>
+            <!-- PROVISÓRIO: horário tirado de um post do Instagram; confirmar com a clínica e se o fixo atende -->
+            <div class="vidro fachada__painel fachada__painel--quando" data-provisorio="horario">
+              <p><strong>Seg a sex, 9h às 19h</strong></p>
+              <p><strong>Sáb, 9h às 14h</strong></p>
+              <p>Fixo <a class="num" href="tel:+551127266239" data-medir="clique_telefone" data-posicao="contato">(11) 2726-6239</a></p>
+            </div>
+          </figcaption>
+        </figure>
       </div>
     </section>
   </main>
 
   <footer class="rodape">
-    <div class="rodape__grade">
+    <div class="grade rodape__grade">
       <img class="rodape__logo" src="assets/img/logo-branco.png" alt="Eloy Verão Odontologia" width="320" height="138" loading="lazy">
-      <p>Eloy Verão Odontologia · Unidade São Paulo<br>Rua Antônio La Giudice, 345 · Jardim Aricanduva, São Paulo – SP</p>
-      <a class="rodape__insta" href="https://www.instagram.com/eloyveraoodonto.sp/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg>@eloyveraoodonto.sp</a>
+      <div class="rodape__info">
+        <p class="rodape__end">Unidade São Paulo · Rua Antônio La Giudice, 345 · Jardim Aricanduva, São Paulo – SP · <span class="num">CEP 03456-060</span></p>
+        <p class="rodape__contatos"><a href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-whats-direto data-area="geral" data-posicao="rodape" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp <span class="num">(11) 96499-9718</span></a><a href="tel:+551127266239" data-medir="clique_telefone" data-posicao="rodape"><svg aria-hidden="true"><use href="#i-telefone"/></svg>Fixo <span class="num">(11) 2726-6239</span></a><a href="https://www.instagram.com/eloyveraoodonto.sp/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg>@eloyveraoodonto.sp</a></p>
+        <p class="rodape__legal">Responsável técnico: Dr. Evandro Eloy M. Ferreira · CRO-SP 71691 · EPAO 431 · © <span data-ano>2026</span> Eloy Verão Odontologia</p>
+      </div>
     </div>
-    <p class="rodape__legal">Responsável técnico: Dr. Evandro Eloy M. Ferreira · CRO-SP 71691 · EPAO 431 · © <span data-ano>2026</span> Eloy Verão Odontologia</p>
   </footer>
 
-  <a class="whats-fixo" href="#contato" data-wa="geral" data-origem="barra-fixa" data-whats-fixo target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
-    <span data-whats-fixo-texto>Agendar pelo WhatsApp</span>
-  </a>
+  <div class="fixo" data-fixo>
+    <a class="botao botao--cheio fixo__botao" href="https://wa.me/5511964999718?text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta.%0AVim%20pelo%20site%20da%20Unidade%20S%C3%A3o%20Paulo%20(Jardim%20Aricanduva)." data-contato data-area="geral" data-posicao="barra-fixa" data-fixo-botao target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-fixo-texto>Marcar pelo WhatsApp</span></a>
+    <a class="fixo__tel" href="tel:+551127266239" data-medir="clique_telefone" data-posicao="barra-fixa" aria-label="Ligar para a clínica"><svg aria-hidden="true"><use href="#i-telefone"/></svg></a>
+  </div>
 
-  <script src="assets/js/site.js?v=20261005a" defer></script>
+  <dialog class="folha" data-folha aria-labelledby="titulo-msg">
+    <div class="folha__topo">
+      <span class="folha__alca" aria-hidden="true"></span>
+      <button class="folha__fechar" type="button" data-folha-fechar aria-label="Fechar"><svg aria-hidden="true"><use href="#i-fechar"/></svg></button>
+    </div>
+    <div class="folha__corpo" data-folha-corpo></div>
+  </dialog>
+
+  <script src="assets/js/site.js?v=20261006v4" defer></script>
 </body>
 </html>
